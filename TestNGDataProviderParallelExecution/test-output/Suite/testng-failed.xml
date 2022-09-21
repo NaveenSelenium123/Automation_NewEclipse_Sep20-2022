@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="Edge"/>
+  <test name="EdgeTest(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="parallelBrowserTesting.Parallel1">
+        <methods>
+          <include name="tc"/>
+        </methods>
+      </class> <!-- parallelBrowserTesting.Parallel1 -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="parallelBrowserTesting.Parallel1">
+        <methods>
+          <include name="tc"/>
+        </methods>
+      </class> <!-- parallelBrowserTesting.Parallel1 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

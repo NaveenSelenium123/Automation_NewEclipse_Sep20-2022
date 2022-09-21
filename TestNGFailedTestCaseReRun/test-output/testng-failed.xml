@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="org.com.UnknownFailure"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none" preserve-order="true">
+    <classes>
+      <class name="org.com.Demo2">
+        <methods>
+          <include name="tc2"/>
+        </methods>
+      </class> <!-- org.com.Demo2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
