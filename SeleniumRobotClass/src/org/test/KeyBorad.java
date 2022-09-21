@@ -13,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class KeyBorad {
 	public static void main(String[] args) throws IOException, AWTException  {
-		System.setProperty("webdriver.chrome.driver", "E:\\projects\\RedBusLogin\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\\\SeleniumDay01\\\\driver\\\\chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.get("http://en-gb.facebook.com");
 		WebElement txtUserName = driver.findElement(By.id("email"));
