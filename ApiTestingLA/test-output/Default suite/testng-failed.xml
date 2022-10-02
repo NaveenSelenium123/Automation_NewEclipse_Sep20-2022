@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.lao.json_path_with_java.RequestSpecification">
+      <class name="com.ems.bdd_style.GetAllEmployees">
         <methods>
-          <include name="setRequestSpecification"/>
           <include name="getAllEmployees"/>
-          <include name="getAnEmployees"/>
         </methods>
-      </class> <!-- com.lao.json_path_with_java.RequestSpecification -->
+      </class> <!-- com.ems.bdd_style.GetAllEmployees -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

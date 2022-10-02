@@ -12,11 +12,11 @@ public class Serialization {
 	public void Serial() {
 	Map<String,Object> jsonBody =new HashMap<String,Object>();
 	List<String> skills =new ArrayList<String>();
-	skills.add("java");
-	skills.add("selenium");
-	jsonBody.put("first name","Agni");
-	jsonBody.put("last name","A");
-	jsonBody.put("email","naveen.jan9@gmail.com");
+	skills.add("javaA");
+	skills.add("seleniumA");
+	jsonBody.put("first name","AgniA");
+	jsonBody.put("last name","AA");
+	jsonBody.put("email","naveenA.jan9@gmail.com");
 	jsonBody.put("skills",skills);
 	System.out.println(jsonBody);
 	RestAssured
