@@ -20,7 +20,8 @@ public class ExplicitluwaitWithStaticMethodExample {
 		driver.findElement(By.name("q")).sendKeys("selenium");
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 				By elelocator=By.xpath("//h3[text()='Selenium']");
-				waitForElementPresent(driver,elelocator,10).click();	
+				waitForElementPresent(driver,elelocator,10).click();
+				
 	}
 	public static WebElement  waitForElementPresent(WebDriver driver,By locator,int timeout) {
 		 WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(timeout));
