@@ -16,7 +16,7 @@ public class HighLightTheTextBox {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		driver.get("https://www.facebook.com/");
 		WebElement txtEmail = driver.findElement(By.id("email"));
-		js.executeScript("arguments[0].setAttribute('style','background:orange;border:solid 9px pink');",txtEmail);
+		js.executeScript("arguments[0].setAttribute('style','background:yellow;border:solid 90px pink');",txtEmail);
 		txtEmail.sendKeys("Naveen");
 
 
