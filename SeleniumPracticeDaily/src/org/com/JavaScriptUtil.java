@@ -45,15 +45,18 @@ js.executeScript("document.body.style.zoom='50%'");
 public static void flash(WebElement element,WebDriver driver) {
 	JavascriptExecutor js=(JavascriptExecutor) driver;					
 String bgcolor = element.getCssValue("backgroundColor");
-for(int i = 0;i <4;i++) {
-	changeColor("#000000",element,driver);
+for(int i = 0;i <50;i++) {
+	//changeColor("#000000",element,driver);
+	//changeColor("#7CFC00",element,driver);
+	changeColor("#FF0000",element,driver);
 	changeColor(bgcolor,element,driver);
+	//https://www.techonthenet.com/css/properties/color.php#:~:text=The%20value%20in%20the%20CSS,255%2C0%2C0).---To get the colour property
 }
 }
 public static void changeColor(String color,WebElement element,WebDriver driver) {
 	JavascriptExecutor js=(JavascriptExecutor) driver;				
-js.executeScript("arguments[0].style.backgroundcolor = '" + color + "'", element);
-try {
+js.executeScript("arguments[0].style.backgroundColor = '" + color + "'", element);
+	try {
 	Thread.sleep(20);
 }catch(InterruptedException e) {
 }
