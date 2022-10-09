@@ -1,0 +1,45 @@
+package pavanYoutubeApachePOI_DataDriven;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelToDataBase {
+	
+public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","HR","system");
+	Statement stmt = con.createStatement();
+	String sql="create table appleee (LOCATION_ID decimal(4,0), STREET_ADDRESS varchar(40),POSTAL_CODE varchar(12),CITY varchar(30),STATE_PROVINCE varchar(25),COUNTRY_ID varchar(2))";
+	stmt.execute(sql);
+	//excel
+	String excelFilePath=".\\dataFiles\\locations.xlsx";
+	FileInputStream inputstream=new FileInputStream(excelFilePath);
+	XSSFWorkbook workbook=new XSSFWorkbook(inputstream);
+	XSSFSheet sheet = workbook.getSheet("Locations Data");
+	int rows = sheet.getLastRowNum();
+	for(int r=1;r<=rows;r++) {
+	XSSFRow row = sheet.getRow(r);	
+	double locId=row.getCell(0).getNumericCellValue();
+	String streatAdd=row.getCell(1).getStringCellValue();
+	String postalCode=row.getCell(2).getStringCellValue();
+	String city=row.getCell(3).getStringCellValue();
+	String stateProv=row.getCell(4).getStringCellValue();
+	String countryId=row.getCell(5).getStringCellValue();
+	sql="insert into appleee values('"+locId+"', '"+streatAdd+"', '"+postalCode+"', '"+city+"', '"+stateProv+"', '"+countryId+"')";
+	stmt.execute(sql);
+	stmt.execute("COMMIT");	
+	}
+	workbook.close();
+	inputstream.close();
+	con.close();
+	System.out.println("Done");
+}
+}
