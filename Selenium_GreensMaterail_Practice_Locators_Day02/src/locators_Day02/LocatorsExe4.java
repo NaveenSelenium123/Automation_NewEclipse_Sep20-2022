@@ -18,7 +18,7 @@ public static void main(String[] args) throws InterruptedException {
 	txtUsername.sendKeys("Naveen"+Keys.ENTER);
 	Alert a=driver.switchTo().alert();
 	a.accept();
-	//driver.switchTo().frame(0);
+	driver.switchTo().frame(0);
 	WebElement btnArrow = driver.findElement(By.xpath("//*[@id=\"user-id-goahead\"]"));
 	btnArrow.click();
 	Thread.sleep(3000);
