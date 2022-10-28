@@ -8,10 +8,9 @@ public static void main(String[] args) {
 	a=b;
 	b=t;*/
 	
-	
-//	a=a+b;
-//	b=a-b;
-//	a=a-b;
+	a=a+b;
+	b=a-b;
+	a=a-b;
 	
 	
 //	a=a*b;

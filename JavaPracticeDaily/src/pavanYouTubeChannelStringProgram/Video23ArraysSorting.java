@@ -25,11 +25,6 @@ Integer a[] = {30,50,20,10,60};
 System.out.println("arrays elements before sorting" +Arrays.toString(a));
 Arrays.sort(a,Collections.reverseOrder());
 System.out.println("arrays elements after sorting" +Arrays.toString(a));	
-	
-	
-	
-	
-	
 	}
 
 }

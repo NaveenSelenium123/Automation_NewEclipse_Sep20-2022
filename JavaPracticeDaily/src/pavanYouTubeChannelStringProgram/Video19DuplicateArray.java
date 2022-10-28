@@ -1,7 +1,5 @@
 package pavanYouTubeChannelStringProgram;
-
 import java.util.HashSet;
-
 public class Video19DuplicateArray {
 
 	public static void main(String[] args) {
@@ -34,8 +32,5 @@ for (String l : arr1) {
 if(flag==false) {
 	System.out.println("Not Found duplicates");
 }
-
-
-
 }
 }

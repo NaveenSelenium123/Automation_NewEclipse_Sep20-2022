@@ -31,8 +31,7 @@ public class Video15_1PrintevenAndOdd2 {
 //		System.out.println(a[i]);  
 //		}  
 //		} 	
-		
-		
+	
 		
 }
 }

@@ -21,7 +21,7 @@ for(int i=0;i<a.length;i++) {
 		min=a[i];
 	}
 }
-System.out.println("Maximumelement in array" +min);
+System.out.println("Minimumelement in array  " +min);
 
 
 
