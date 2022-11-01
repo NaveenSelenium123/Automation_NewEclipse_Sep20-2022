@@ -1,7 +1,6 @@
-package dataDriven;
+package baseClass;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -13,29 +12,31 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
 public class BaseClass {
-	WebDriver driver;// instance
-	public void browserConChrome() {
+	public static WebDriver driver;// instance
+	public static void browserConChrome() {
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver();
 	}
-	public void openApplication(String url) {
+	public static void openApplication(String url) {
 	driver.get(url);
 	}
-	public void maximizeWindow() {
+	public static void maximizeWindow() {
 	driver.manage().window().maximize();
 	}
 	public WebElement webElementLocateById(String id) {
 	WebElement findElement = driver.findElement(By.id(id));
 	return findElement;
 	}
-	public WebElement locateByName(String name) {
+	public  WebElement locateByName(String name) {
 	WebElement findElement = driver.findElement(By.name(name));
 	return findElement;
 	}
@@ -48,10 +49,10 @@ public class BaseClass {
 	return findElement;
 	}
 	//element.sendkey("value")
-	public void inputText(WebElement element,String value) {
+	public  static void inputText(WebElement element,String value) {
 	element.sendKeys(value);
 	}
-	public void click(WebElement element) {
+	public static void click(WebElement element) {
 	element.click();
 	}
 	public String getText(WebElement element) {
@@ -60,10 +61,18 @@ public class BaseClass {
 	}
 	public static String getAttribute(WebElement element) {
 		String text = element.getAttribute("value");
-		return text;
-		
-		
+		return text;	
 	}
+	public static void dropdown(WebElement element,int value) {
+		Select s =new Select(element);
+		s.selectByIndex(value);	
+	}
+	
+	public static  void jkClick(WebElement element) {
+		JavascriptExecutor jk =(JavascriptExecutor) driver;
+		jk.executeScript("arguments[0].click()", element);
+		}
+
 	public String excelRead(String path,String sheetName,int rowNo,int cellNo) 
 	throws IOException {
 	String value=null;
@@ -105,10 +114,7 @@ public class BaseClass {
 	c.setCellValue(data);
 	FileOutputStream fout =new FileOutputStream(f);
 	w.write(fout);
-	}
-	
-	
-	
+	}	
 }
 
 

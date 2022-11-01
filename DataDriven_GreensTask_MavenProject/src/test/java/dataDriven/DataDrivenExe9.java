@@ -65,10 +65,13 @@ public class DataDrivenExe9 {
 	b.inputText(cvvNo,b.excelRead("E:\\Windows_Old Eclipse Projects\\DataDriven_GreensTask_MavenProject\\excel\\EXCEL AdactinApp.xlsx","Sheet1",2,5));
 	WebElement bookNow = b.locateById("book_now");
 	bookNow.click();
-	Thread.sleep(3000);
-	//WebElement textOrderNo = b.locateById("order_no");
+	
+	WebElement textOrderNo = b.locateById("order_no");
+textOrderNo.getAttribute("value");
+	
+	
 	//WebElement textOrderNo = b.locateByXpath("//input[@name='order_no']");
-	//String text2 = b.getText(textOrderNo);
+	//String text2 =textOrderNo.getAttribute(); 
 	//System.out.println(text2);	
 }
 }

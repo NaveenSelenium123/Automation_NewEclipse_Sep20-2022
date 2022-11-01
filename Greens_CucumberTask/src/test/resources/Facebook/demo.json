@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Verify the functionality of registeration with valid username and valid password",
+        "description": "",
+        "id": "verify-the-functionality-demoqa-registeration-form;verify-the-functionality-of-registeration-with-valid-username-and-valid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7998216400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User in DemoQA login page",
+            "match": {
+              "location": "StepDefinition.user_in_DemoQA_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 432450200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter the valid firstname and valid lastname",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_firstname_and_valid_lastname()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 213564400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enter the valid email and Address",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_email_and_Address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93127300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enter the valid phone number",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_phone_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 158099100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enter the valid Hobbies and Gender",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_Hobbies_and_Gender()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 327131000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enter the valid Skillset",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_Skillset()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 640806600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enter the valid Date of birth",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_Date_of_birth()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 207654500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User enter the valid password and confirm password",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_password_and_confirm_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98015800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click the login button",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Successful message is dispalyed",
+            "match": {
+              "location": "StepDefinition.successful_message_is_dispalyed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality DemoQA registeration form",
+    "description": "",
+    "id": "verify-the-functionality-demoqa-registeration-form",
+    "keyword": "Feature",
+    "uri": "src/test/resources/DemoQAExe6.Feature",
+    "tags": []
+  }
+]

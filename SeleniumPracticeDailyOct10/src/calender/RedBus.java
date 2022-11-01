@@ -11,9 +11,9 @@ public static void main(String[] args) throws InterruptedException {
 	driver.get("https://www.redbus.in/");
 	driver.findElement(By.id("onward_cal")).click();
 	Thread.sleep(3000);
-	driver.findElement(By.xpath("//*[@id=\"rb-calendar_onward_cal\"]/table/tbody/tr[8]/td[1]")).click();
+	driver.findElement(By.xpath("//td[@class='current day']")).click();
 	//driver.findElement(By.id("onward_cal")).sendKeys("29-Oct-2022");
 
-
+////*[@id="rb-calendar_onward_cal"]/table/tbody/tr[8]/td[1]
 }
 }

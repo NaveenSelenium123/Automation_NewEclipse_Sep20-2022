@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Verify login functionality for valid username and valid password",
+        "description": "",
+        "id": "verify-login-functionality-in-facebook-application;verify-login-functionality-for-valid-username-and-valid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6996930900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User in on Facebook login page",
+            "match": {
+              "location": "StepDefinition.user_in_on_Facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213657100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters the valid username and valid password",
+            "match": {
+              "location": "StepDefinition.user_enters_the_valid_username_and_valid_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 113073500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click the login button",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 347200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Successful page is displayed",
+            "match": {
+              "location": "StepDefinition.successful_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Successful tags completed",
+            "match": {
+              "location": "StepDefinition.successful_tags_completed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Verify login functionality in Facebook Application",
+    "description": "",
+    "id": "verify-login-functionality-in-facebook-application",
+    "keyword": "Feature",
+    "uri": "src/test/resources/FacebookExe8.Feature",
+    "tags": []
+  }
+]

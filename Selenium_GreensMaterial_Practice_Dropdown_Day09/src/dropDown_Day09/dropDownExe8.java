@@ -45,14 +45,14 @@ public class dropDownExe8 {
 		driver.findElement(By.id("book_now")).click();
 	Thread.sleep(10000);
 		WebElement txtOrder = driver.findElement(By.id("order_no"));
-		String text = txtOrder.getText();
+		String text = txtOrder.getAttribute("value");
 		System.out.println(text);
-		
-		//driver.findElement(By.id("my_itinerary")).click();
-		//WebElement printOrderNo = driver.findElement(By.id("order_id_743028"));
-		//Thread.sleep(10000);
-		//String Pno = printOrderNo.getText();
-		//System.out.println(Pno);
+//		Thread.sleep(10000);
+//		//driver.findElement(By.id("my_itinerary")).click();
+//		WebElement printOrderNo = driver.findElement(By.id("order_id_743028"));
+//		
+//		String Pno = printOrderNo.getText();
+//		System.out.println(Pno);
 		
 	}
 	public static void dropDownStat(WebElement element,int value) {
