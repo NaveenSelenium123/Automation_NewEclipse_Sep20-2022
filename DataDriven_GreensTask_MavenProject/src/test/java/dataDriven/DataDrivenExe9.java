@@ -67,12 +67,20 @@ public class DataDrivenExe9 {
 	bookNow.click();
 	
 	WebElement textOrderNo = b.locateById("order_no");
-textOrderNo.getAttribute("value");
+	 getAttributeFinal1(textOrderNo);
+	//getAttribute(textOrderNo);
+	
 	
 	
 	//WebElement textOrderNo = b.locateByXpath("//input[@name='order_no']");
 	//String text2 =textOrderNo.getAttribute(); 
 	//System.out.println(text2);	
 }
+	
+	public static String getAttributeFinal1(WebElement element) {
+		String text = element.getAttribute("value");
+		System.out.println(text);
+		return text;
+	}
 }
 
