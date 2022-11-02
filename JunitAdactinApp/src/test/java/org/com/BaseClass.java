@@ -70,6 +70,7 @@ public class BaseClass {
 	}
 	public String getAttribute(WebElement element) {
 		String text = element.getAttribute("value");
+		System.out.println(text);
 		return text;
 	}
 	

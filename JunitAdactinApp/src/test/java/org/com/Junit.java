@@ -19,11 +19,11 @@ public class Junit extends BaseClass {
 		browserClose();	
 	}
 	@Test
-	public  void tc1() throws IOException {
+	public  void tc1() throws IOException, InterruptedException {
 		WebElement txtUserName  = webElementLocateById("username");
-		inputText( txtUserName,excelRead("C:\\Users\\navee\\OneDrive\\Desktop\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 7));
+		inputText( txtUserName,excelRead("E:\\New folder\\New folder\\New folder\\Greens_NewEclipse_Sep20-2022\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 7));
 		WebElement txtPassword = webElementLocateById("password");
-		inputText( txtPassword,excelRead("C:\\Users\\navee\\OneDrive\\Desktop\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 6));
+		inputText( txtPassword,excelRead("E:\\New folder\\New folder\\New folder\\Greens_NewEclipse_Sep20-2022\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 6));
 		WebElement btnLogin = webElementLocateById("login");
 		click(btnLogin);
 		WebElement btnLocation = webElementLocateById("location");
@@ -43,13 +43,13 @@ public class Junit extends BaseClass {
 		WebElement continue1   = webElementLocateById("continue");
 		click(continue1);
 		WebElement firstname  = webElementLocateById("first_name");
-		inputText( firstname,excelRead("C:\\Users\\navee\\OneDrive\\Desktop\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 1));
+		inputText( firstname,excelRead("E:\\New folder\\New folder\\New folder\\Greens_NewEclipse_Sep20-2022\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 1));
 		WebElement lastname  = webElementLocateById("last_name");
-		inputText( lastname,excelRead("C:\\Users\\navee\\OneDrive\\Desktop\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 2));
+		inputText( lastname,excelRead("E:\\New folder\\New folder\\New folder\\Greens_NewEclipse_Sep20-2022\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 2));
 		WebElement address = webElementLocateById("address");
-		inputText( address,excelRead("C:\\Users\\navee\\OneDrive\\Desktop\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 3));
+		inputText( address,excelRead("E:\\New folder\\New folder\\New folder\\Greens_NewEclipse_Sep20-2022\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 3));
 		WebElement ccNo = webElementLocateById("cc_num");
-		inputText( ccNo,excelRead("C:\\Users\\navee\\OneDrive\\Desktop\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 4));
+		inputText( ccNo,excelRead("E:\\New folder\\New folder\\New folder\\Greens_NewEclipse_Sep20-2022\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 1, 4));
 		
 		WebElement ccType = webElementLocateById("cc_type");
 		dropDown(ccType ,1);
@@ -58,12 +58,13 @@ public class Junit extends BaseClass {
 		WebElement expiryYear = webElementLocateById("cc_exp_year");
 		dropDown(expiryYear ,12);
 		WebElement cvvNo= webElementLocateById("cc_cvv");
-		inputText(cvvNo,excelRead("C:\\Users\\navee\\OneDrive\\Desktop\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 2, 5));
+		inputText(cvvNo,excelRead("E:\\New folder\\New folder\\New folder\\Greens_NewEclipse_Sep20-2022\\MavenFeb\\Folder\\TestData.xlsx","Adactin", 2, 5));
 		WebElement book_now   = webElementLocateById("book_now");
 		click(book_now);                 //order_no
 		//WebElement textOrderNo = webElementLocateById("order_no");
 		//javaScriptGetValue(textOrderNo);
 		//getAttribute(textOrderNo);
+		Thread.sleep(10000);
 		WebElement textOrderNo  = webElementLocateById("order_no");
 		getAttribute(textOrderNo);
 		
