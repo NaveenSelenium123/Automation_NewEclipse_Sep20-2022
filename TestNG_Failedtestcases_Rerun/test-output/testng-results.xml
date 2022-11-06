@@ -2,16 +2,16 @@
 <testng-results skipped="8" failed="1" ignored="0" total="11" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+  <suite name="Suite" duration-ms="410" started-at="2022-11-06T15:41:25Z" finished-at="2022-11-06T15:41:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
-      <class name="AutoKnown_FailedTc.Demo">
-        <test-method status="PASS" signature="tc1()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc1" duration-ms="9" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+    <test name="Test" duration-ms="410" started-at="2022-11-06T15:41:25Z" finished-at="2022-11-06T15:41:26Z">
+      <class name="AutoUnknown_FailedTc.Demo">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc1" duration-ms="46" started-at="2022-11-06T15:41:25Z" finished-at="2022-11-06T15:41:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="2" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="32" started-at="2022-11-06T15:41:25Z" finished-at="2022-11-06T15:41:25Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +22,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,7 +54,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="0" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="1" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -65,7 +65,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -97,7 +97,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="1" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="2" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -108,7 +108,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -140,7 +140,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="0" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="2" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -151,7 +151,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -183,7 +183,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="0" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="1" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -194,7 +194,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -226,7 +226,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="0" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="3" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -237,7 +237,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -269,7 +269,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="0" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="1" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -280,7 +280,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -312,7 +312,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="0" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="0" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -323,7 +323,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -355,7 +355,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="FAIL" signature="tc2()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc2" duration-ms="0" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="FAIL" signature="tc2()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc2" duration-ms="2" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -366,7 +366,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at AutoKnown_FailedTc.Demo.tc2(Demo.java:13)
+at AutoUnknown_FailedTc.Demo.tc2(Demo.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -398,11 +398,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="PASS" signature="tc3()[pri:0, instance:AutoKnown_FailedTc.Demo@77caeb3e]" name="tc3" duration-ms="3" started-at="2022-09-21T15:35:32Z" finished-at="2022-09-21T15:35:32Z">
+        <test-method status="PASS" signature="tc3()[pri:0, instance:AutoUnknown_FailedTc.Demo@27efef64]" name="tc3" duration-ms="2" started-at="2022-11-06T15:41:26Z" finished-at="2022-11-06T15:41:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3 -->
-      </class> <!-- AutoKnown_FailedTc.Demo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- AutoUnknown_FailedTc.Demo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
