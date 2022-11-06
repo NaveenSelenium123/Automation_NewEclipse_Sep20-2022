@@ -1,0 +1,13 @@
+{
+  "theme": "DARK",
+  "encoding": "utf-8",
+  "protocol": "HTTPS",
+  "timelineEnabled": false,
+  "offlineMode": true,
+  "thumbnailForBase64": false,
+  "documentTitle": "TN APP TEST Automatiin results",
+  "reportName": "Tutorial ninja extent ExtentReports",
+  "timeStampFormat": "dd-MM-yyyy hh:mm:ss",
+  "js": "document.getElementsByClassName('logo')[0].style.dispaly='none';",
+  "css": ".badge-primary{background-color:#058d0b}"
+}
