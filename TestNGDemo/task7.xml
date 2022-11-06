@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+   <class name="testng.greenspractice.Task7"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test name="EdgeTest">
+  <parameter name="browser" value="edge"></parameter>
+  <classes>
+   <class name="testng.greenspractice.Task7"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="MozilaTest">
+  <parameter name="browser" value="mozila"></parameter>
+  <classes>
+   <class name="testng.greenspractice.Task7"></class>
+  </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

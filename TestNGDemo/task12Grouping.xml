@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+  <groups>
+  <run>
+ 
+  <exclude name="sanity"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="testng.greenspractice.Task124"/>
+      <class name="testng.greenspractice.Task125"/>
+      <class name="testng.greenspractice.Task123"/>
+      <class name="testng.greenspractice.Task121"/>
+      <class name="testng.greenspractice.Task12"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

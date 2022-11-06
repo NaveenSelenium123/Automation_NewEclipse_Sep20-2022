@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+  <parameter name="email" value="naveen.jan9@gmail.com"></parameter>
+  <parameter name="pass" value="naveen.jan9@gmail.com"></parameter>
+  <classes>
+  <class name="testng.greenspractice.Task14"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
