@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10972" started-at="2022-11-07T04:25:50Z" finished-at="2022-11-07T04:26:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10972" started-at="2022-11-07T04:25:50Z" finished-at="2022-11-07T04:26:01Z">
+      <class name="org.com.Demo">
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:org.com.Demo@754ba872]" name="BrowserLaunch" is-config="true" duration-ms="6868" started-at="2022-11-07T04:25:50Z" finished-at="2022-11-07T04:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="BusinessLogic()[pri:0, instance:org.com.Demo@754ba872]" name="BusinessLogic" duration-ms="181" started-at="2022-11-07T04:25:57Z" finished-at="2022-11-07T04:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BusinessLogic -->
+        <test-method status="PASS" signature="report()[pri:0, instance:org.com.Demo@754ba872]" name="report" duration-ms="48" started-at="2022-11-07T04:25:57Z" finished-at="2022-11-07T04:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:org.com.Demo@754ba872]" name="CloseBrowser" is-config="true" duration-ms="3809" started-at="2022-11-07T04:25:57Z" finished-at="2022-11-07T04:26:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- org.com.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
