@@ -47,6 +47,5 @@ File sourceScreenshotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.F
 File destinationScreenshotFile=new File(System.getProperty("user.dir")+"\\Screenshots\\"+fileName+".png");
 FileUtils.copyFile(sourceScreenshotFile, destinationScreenshotFile);
 return destinationScreenshotFile.getAbsolutePath();
-
 }
 }
